@@ -1,0 +1,200 @@
+body{
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: rgb(240, 240, 240);
+}
+a{
+    text-decoration: none;
+}
+@media screen and (min-width: 750px){
+    html{
+        font-size: 37.5px !important;
+    }
+}
+.warp{
+    background-color: #fff;
+    padding-bottom: 1.146667rem;
+}
+.header{
+    height: 2.133333rem;
+    border-bottom: .026667rem solid #eaeaae;
+    font-size: .933333rem;
+    text-align: center;
+    line-height: 2.133333rem;
+    color: #1c1c1c;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.066667rem 0 1.6rem 0;
+    .items{
+        display: flex;
+        flex: 33.33%;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 3.706667rem;
+            height: 3.706667rem;
+        }
+        span{
+            font-size: .666667rem;
+            color: #707070;
+        }
+        &:nth-child(-n+3){
+            margin-bottom: 1.653333rem;
+        }
+    }
+}
+.go{
+    margin: 0 .266667rem 0 0.48rem;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.content{
+    padding: 1.066667rem .586667rem;
+    background-color: #fff;
+    margin-top: .266667rem;
+    .content_hd{
+        display: flex;
+        justify-content: space-between;
+        height: 1.013333rem;
+        line-height: 1.013333rem;
+        margin-bottom: 1.066667rem;
+        h4{
+            margin: 0;
+            font-size: .746667rem;
+            color: #333;
+            .icon{
+                img{
+                    width: 1.013333rem;
+                    height: 1.013333rem;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .more{
+            font-size: .586667rem;
+            color: #999;
+        }
+    }
+    .content_bd{
+        position: relative;
+        .swiper-container {
+            width: 14.4rem;
+            height: 100%;
+          }
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+      
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            transition: 300ms;
+            transform: scale(0.8);
+            opacity: .5;
+
+            // 添加图片
+            a{
+                width: 9.013333rem;
+                height: 10.026667rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            p{
+                width: 9.013333rem;
+                font-size: .666667rem;
+                margin-top: .64rem;
+                color: #333;
+            }
+          }
+          .swiper-slide-active,
+          .swiper-slide-duplicate-active{
+            transform: scale(1);
+            z-index: 999;
+            opacity: 1;
+          }
+          .swiper-button-next,
+          .swiper-button-prev{
+              &::after{
+                  color: #333;
+                  outline: none;
+              }
+          }
+    }
+}
+.study{
+    overflow: hidden;
+    padding: .026667rem;
+    .swiper-slide {
+        font-size: .48rem;
+        background: #fff;
+        width: 7.733333rem;
+        height: 9.066667rem;
+        background-color: #fff;
+        border-radius: .266667rem;
+        box-shadow: 0 0 .266667rem rgba(0, 0, 0, 0.1);
+        /* Center slide text vertically */
+        img{
+            width: 100%;
+        }
+        h4{
+            font-size: .693333rem;
+            margin: .533333rem 0;
+            font-weight: 400;
+            padding: 0 .266667rem;
+        }
+        p{
+            font-size: .693333rem;
+            color: #ff4400;
+            padding: 0 .266667rem
+        }
+      }
+}
+.study_bottom{
+    padding-bottom: 4.746667rem;
+}
+.footer{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3.146667rem;
+    background-color: #fff;
+    padding: 0.533333rem;
+    border-top: 1px solid #ccc;
+    z-index: 999;
+    a{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        flex: 1;
+        img{
+            width: 1.04rem;
+            height: 1.093333rem;
+        }
+        p{
+            font-size: 0.586667rem;
+            color: #666;
+            margin-top: .266667rem;
+        }
+    }
+}
